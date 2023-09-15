@@ -1,0 +1,555 @@
+@import url("https://fonts.googleapis.com/css2?family=Bebas+Neue&family=Lato:wght@100;300;400;700;900&display=swap");
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: "Lato", sans-serif;
+}
+
+body {
+  background-image: url("../images/bg-body.jpg");
+  background-repeat: repeat;
+  background-position: center;
+  background-size: cover;
+  background-attachment: fixed;
+}
+
+header nav .container-fluid {
+  background-color: #313131;
+}
+header nav .container-fluid .navbar-brand .logo {
+  max-width: 250px;
+}
+header nav .container-fluid .collapse .navbar-nav .nav-item a {
+  animation: rotate-center 0.6s ease-in-out both;
+  color: #ffffff;
+  border: 3px solid #FF160A;
+  background-color: #8E0000;
+  font-family: "Bebas Neue", sans-serif;
+  font-size: 2rem;
+}
+header nav .container-fluid .collapse .navbar-nav .nav-item a:hover {
+  background-color: #EB8484;
+}
+@keyframes rotate-center {
+  0% {
+    transform: rotate(0);
+  }
+  100% {
+    transform: rotate(360deg);
+  }
+}
+footer {
+  background-color: #313131;
+}
+footer .pie .redes .red {
+  font-size: 3.5rem;
+  color: #ffffff;
+}
+footer .pie .info .divinfo .icon {
+  font-size: 1.5rem;
+  color: #ffffff;
+}
+footer .pie .info .divinfo .pinfo {
+  color: #ffffff;
+  font-size: 1.3rem;
+}
+
+main .sesion-inicio .ho {
+  background-image: url("../images/hero.png");
+  background-size: cover;
+  background-position: center;
+  height: 90vh;
+}
+main .sesion-inicio .ho h1 {
+  font-family: "Bebas Neue", sans-serif;
+  font-size: 80px;
+  color: #ffffff;
+  background-color: rgba(0, 0, 0, 0.7);
+}
+main .sesion-inicio .ho .subtitulo {
+  font-size: 2.2rem;
+  text-align: center;
+  margin-inline: 35px;
+  color: #ffffff;
+  background-color: rgba(0, 0, 0, 0.7);
+}
+main .sesion-inicio2 .nosotros {
+  display: grid;
+  margin-block: 9rem;
+  grid-template-columns: 1fr 1fr;
+  grid-template-rows: 1fr 1fr 1fr;
+  grid-template-areas: "caja1 caja2" "caja4 caja3" "caja5 caja6";
+}
+main .sesion-inicio2 .nosotros .nosotros-caja {
+  margin-inline: 1rem;
+  margin-block: 2rem;
+  height: 600px;
+}
+main .sesion-inicio2 .nosotros .nosotros-caja1 {
+  grid-area: caja1;
+  display: flex;
+  justify-content: center;
+}
+main .sesion-inicio2 .nosotros .nosotros-caja2 {
+  grid-area: caja2;
+}
+main .sesion-inicio2 .nosotros .nosotros-caja2 .pgrilla {
+  font-size: 18px;
+}
+main .sesion-inicio2 .nosotros .nosotros-caja3 {
+  grid-area: caja3;
+  display: flex;
+  justify-content: center;
+}
+main .sesion-inicio2 .nosotros .nosotros-caja4 {
+  grid-area: caja4;
+}
+main .sesion-inicio2 .nosotros .nosotros-caja4 .pgrilla {
+  font-size: 18px;
+}
+main .sesion-inicio2 .nosotros .nosotros-caja5 {
+  grid-area: caja5;
+  display: flex;
+  justify-content: center;
+}
+main .sesion-inicio2 .nosotros .nosotros-caja6 {
+  grid-area: caja6;
+}
+main .sesion-inicio2 .nosotros .nosotros-caja6 .pgrilla {
+  font-size: 18px;
+}
+
+main .sesion-historia .titulo {
+  margin-block: 5rem;
+}
+main .sesion-historia .titulo h2 {
+  font-family: "Bebas Neue", sans-serif;
+  font-size: 70px;
+  font-weight: 900;
+}
+main .sesion-historia .intro .parrafo-historia1 {
+  font-size: 20px;
+  margin-bottom: 5rem;
+}
+main .sesion-historia .historiadiv h3 {
+  font-size: 30px;
+  font-weight: 600;
+}
+main .sesion-historia .historiadiv .parrafo-historia {
+  font-size: 20px;
+  margin-bottom: 5rem;
+}
+main .sesion-historia .titulo-banderas {
+  font-size: 30px;
+  margin-top: 5rem;
+  font-weight: 900;
+}
+main .sesion-historia .historiadivgrilla {
+  display: grid;
+  margin-bottom: 5rem;
+  grid-template-columns: 1fr 4fr;
+  grid-template-rows: repeat(10, auto);
+  grid-template-areas: "item1   item11" "item2   item12" "item3   item13" "item4   item14" "item5   item15" "item6   item16" "item7   item17" "item8   item18" "item9   item19" "item10  item20";
+}
+main .sesion-historia .historiadivgrilla .grilla-item {
+  border: 1px solid black;
+  background-color: #BFC7BC;
+  font-size: 18px;
+  margin-bottom: 0.5rem;
+}
+main .sesion-historia .historiadivgrilla .itemg1 {
+  grid-area: item1;
+}
+main .sesion-historia .historiadivgrilla .itemg2 {
+  grid-area: item2;
+}
+main .sesion-historia .historiadivgrilla .itemg3 {
+  grid-area: item3;
+}
+main .sesion-historia .historiadivgrilla .itemg4 {
+  grid-area: item4;
+}
+main .sesion-historia .historiadivgrilla .itemg5 {
+  grid-area: item5;
+}
+main .sesion-historia .historiadivgrilla .itemg6 {
+  grid-area: item6;
+}
+main .sesion-historia .historiadivgrilla .itemg7 {
+  grid-area: item7;
+}
+main .sesion-historia .historiadivgrilla .itemg8 {
+  grid-area: item8;
+}
+main .sesion-historia .historiadivgrilla .itemg9 {
+  grid-area: item9;
+}
+main .sesion-historia .historiadivgrilla .itemg10 {
+  grid-area: item10;
+}
+main .sesion-historia .historiadivgrilla .itemg11 {
+  grid-area: item11;
+}
+main .sesion-historia .historiadivgrilla .itemg12 {
+  grid-area: item12;
+}
+main .sesion-historia .historiadivgrilla .itemg13 {
+  grid-area: item13;
+}
+main .sesion-historia .historiadivgrilla .itemg14 {
+  grid-area: item14;
+}
+main .sesion-historia .historiadivgrilla .itemg15 {
+  grid-area: item15;
+}
+main .sesion-historia .historiadivgrilla .itemg16 {
+  grid-area: item16;
+}
+main .sesion-historia .historiadivgrilla .itemg17 {
+  grid-area: item17;
+}
+main .sesion-historia .historiadivgrilla .itemg18 {
+  grid-area: item18;
+}
+main .sesion-historia .historiadivgrilla .itemg19 {
+  grid-area: item19;
+}
+main .sesion-historia .historiadivgrilla .itemg20 {
+  grid-area: item20;
+}
+main .sesion-historia .historiadivtabla {
+  width: 100vh;
+  margin: 0 5rem 10rem 10rem;
+}
+
+main .sesion-equipo .titulo-equipos h2 {
+  font-family: "Bebas Neue", sans-serif;
+  font-size: 70px;
+  font-weight: 900;
+  margin: 2rem 0 9rem 0;
+}
+main .sesion-equipo .grilla-equipos {
+  display: grid;
+  height: 100vh;
+  grid-template-columns: 1fr 1fr 1fr;
+  grid-template-rows: 1fr 1fr 1fr 1fr;
+  grid-template-areas: "equipo1 equipo2  equipo3" "equipo4 equipo5  equipo6" "equipo7 equipo8  equipo9" ".       equipo10 . ";
+}
+main .sesion-equipo .grilla-equipos .equipo {
+  border: 1px solid black;
+  background-color: rgb(255, 255, 255);
+  margin: 1rem;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  animation: scale-up-center 0.4s cubic-bezier(0.39, 0.575, 0.565, 1) both;
+}
+main .sesion-equipo .grilla-equipos .equipo1 {
+  grid-area: equipo1;
+  background-image: url("../images/logoalfaromeo.jpg");
+  background-position: center;
+  background-size: cover;
+}
+main .sesion-equipo .grilla-equipos .equipo2 {
+  grid-area: equipo2;
+  background-image: url("../images/logoalphatauri.jpg");
+  background-position: center;
+  background-size: cover;
+}
+main .sesion-equipo .grilla-equipos .equipo3 {
+  grid-area: equipo3;
+  background-image: url("../images/logoalpine.png");
+  background-position: center;
+  background-size: cover;
+}
+main .sesion-equipo .grilla-equipos .equipo4 {
+  grid-area: equipo4;
+  background-image: url("../images/logoastonmartin.jpg");
+  background-position: center;
+  background-size: cover;
+}
+main .sesion-equipo .grilla-equipos .equipo5 {
+  grid-area: equipo5;
+  background-image: url("../images/logoferrari.png");
+  background-position: center;
+  background-size: cover;
+}
+main .sesion-equipo .grilla-equipos .equipo6 {
+  grid-area: equipo6;
+  background-image: url("../images/logohaas2.png");
+  background-position: right;
+  background-size: cover;
+}
+main .sesion-equipo .grilla-equipos .equipo7 {
+  grid-area: equipo7;
+  background-image: url("../images/logomclaren2.jpg");
+  background-position: center;
+  background-size: cover;
+}
+main .sesion-equipo .grilla-equipos .equipo8 {
+  grid-area: equipo8;
+  background-image: url("../images/logomercedes2.png");
+  background-position: center;
+  background-size: cover;
+}
+main .sesion-equipo .grilla-equipos .equipo9 {
+  grid-area: equipo9;
+  background-image: url("../images/logoredbull.jpg");
+  background-position: center;
+  background-size: cover;
+}
+main .sesion-equipo .grilla-equipos .equipo10 {
+  grid-area: equipo10;
+  background-image: url("../images/logowilliams.jpg");
+  background-position: center;
+  background-size: cover;
+}
+main .sesion-equipo .grilla-equipos .equipo1 {
+  animation-delay: 0.03s;
+}
+main .sesion-equipo .grilla-equipos .equipo2 {
+  animation-delay: 0.06s;
+}
+main .sesion-equipo .grilla-equipos .equipo3 {
+  animation-delay: 0.09s;
+}
+main .sesion-equipo .grilla-equipos .equipo4 {
+  animation-delay: 0.12s;
+}
+main .sesion-equipo .grilla-equipos .equipo5 {
+  animation-delay: 0.15s;
+}
+main .sesion-equipo .grilla-equipos .equipo6 {
+  animation-delay: 0.18s;
+}
+main .sesion-equipo .grilla-equipos .equipo7 {
+  animation-delay: 0.21s;
+}
+main .sesion-equipo .grilla-equipos .equipo8 {
+  animation-delay: 0.24s;
+}
+main .sesion-equipo .grilla-equipos .equipo9 {
+  animation-delay: 0.27s;
+}
+main .sesion-equipo .grilla-equipos .equipo10 {
+  animation-delay: 0.3s;
+}
+@keyframes scale-up-center {
+  0% {
+    transform: scale(0.5);
+  }
+  100% {
+    transform: scale(1);
+  }
+}
+main .section-galery {
+  margin-block: 10rem;
+}
+main .section-galery h2 {
+  font-family: "Bebas Neue", sans-serif;
+  font-size: 100px;
+  margin-top: 2rem;
+}
+main .section-galery .titulo-carousel {
+  margin-top: 7rem;
+  font-size: 24px;
+}
+main .section-galery .carousel .carousel-inner .carousel-item .carousel-caption .fondo-access {
+  font-size: 36px;
+  background-color: rgba(0, 0, 0, 0.6);
+}
+main .section-galery .carousel .carousel-inner .carousel-item .carousel-caption .fondo-accessp {
+  font-size: 22px;
+  background-color: rgba(0, 0, 0, 0.6);
+}
+
+main .sesion-tienda .titulo-tienda h2 {
+  font-family: "Bebas Neue", sans-serif;
+  font-size: 70px;
+  font-weight: 900;
+  margin-top: 5rem;
+}
+main .sesion-tienda .titulo-tienda p {
+  font-size: 30px;
+  margin-bottom: 2rem;
+}
+main .sesion-tienda .titulito1 {
+  font-family: "Bebas Neue", sans-serif;
+  font-size: 40px;
+  margin: 9rem 0 0 1rem;
+}
+main .sesion-tienda .tienda-gorras {
+  display: grid;
+  grid-template-columns: 1fr 1fr 1fr;
+  grid-template-rows: 1fr 1fr 1fr 1fr;
+  grid-template-areas: "gorra1   gorra2 gorra3" "gorra4   gorra5 gorra6" "gorra7   gorra8 gorra9" "gorra10  .      .    ";
+}
+main .sesion-tienda .tienda-gorras .item-gorra {
+  border: 1px solid black;
+  background-color: rgba(50, 50, 50, 0.5);
+  margin: 1rem;
+  padding: 1rem;
+}
+main .sesion-tienda .tienda-gorras .item-gorra:hover {
+  animation: shadow-drop-2-center 0.4s cubic-bezier(0.165, 0.84, 0.44, 1) both;
+}
+main .sesion-tienda .tienda-gorras .item-gorra img {
+  width: 100%;
+}
+main .sesion-tienda .tienda-gorras .item-gorra h6 {
+  margin: 1rem 0 0 1rem;
+  font-size: 20px;
+}
+main .sesion-tienda .tienda-gorras .item-gorra button {
+  margin: 1rem;
+}
+main .sesion-tienda .tienda-gorras .item-gorra1 {
+  grid-area: gorra1;
+}
+main .sesion-tienda .tienda-gorras .item-gorra2 {
+  grid-area: gorra2;
+}
+main .sesion-tienda .tienda-gorras .item-gorra3 {
+  grid-area: gorra3;
+}
+main .sesion-tienda .tienda-gorras .item-gorra4 {
+  grid-area: gorra4;
+}
+main .sesion-tienda .tienda-gorras .item-gorra5 {
+  grid-area: gorra5;
+}
+main .sesion-tienda .tienda-gorras .item-gorra6 {
+  grid-area: gorra6;
+}
+main .sesion-tienda .tienda-gorras .item-gorra7 {
+  grid-area: gorra7;
+}
+main .sesion-tienda .tienda-gorras .item-gorra8 {
+  grid-area: gorra8;
+}
+main .sesion-tienda .tienda-gorras .item-gorra9 {
+  grid-area: gorra9;
+}
+main .sesion-tienda .tienda-gorras .item-gorra10 {
+  grid-area: gorra10;
+}
+main .sesion-tienda .titulito2 {
+  font-family: "Bebas Neue", sans-serif;
+  font-size: 40px;
+  margin: 9rem 0 0 1rem;
+}
+main .sesion-tienda .tienda-buzos {
+  display: grid;
+  grid-template-columns: 1fr 1fr 1fr;
+  grid-template-rows: 1fr 1fr 1fr 1fr 1fr;
+  grid-template-areas: "buzo1  buzo2  buzo3" "buzo4  buzo5  buzo6" "buzo7  buzo8  buzo9" "buzo10 buzo11 buzo12" "buzo13 .      .     ";
+}
+main .sesion-tienda .tienda-buzos .item-buzo {
+  border: 1px solid black;
+  background-color: rgba(50, 50, 50, 0.5);
+  margin: 1rem;
+  padding: 1rem;
+}
+main .sesion-tienda .tienda-buzos .item-buzo:hover {
+  animation: shadow-drop-2-center 0.4s cubic-bezier(0.165, 0.84, 0.44, 1) both;
+}
+main .sesion-tienda .tienda-buzos .item-buzo img {
+  width: 100%;
+}
+main .sesion-tienda .tienda-buzos .item-buzo h6 {
+  margin: 1rem 0 0 1rem;
+  font-size: 20px;
+}
+main .sesion-tienda .tienda-buzos .item-buzo button {
+  margin: 1rem;
+}
+main .sesion-tienda .titulito3 {
+  font-family: "Bebas Neue", sans-serif;
+  font-size: 40px;
+  margin: 9rem 0 0 1rem;
+}
+main .sesion-tienda .tienda-remeras {
+  display: grid;
+  margin-bottom: 6rem;
+  grid-template-columns: 1fr 1fr 1fr;
+  grid-template-rows: 1fr 1fr;
+  grid-template-areas: "remera1 remera2 remera3" "remera4 remera5 .      ";
+}
+main .sesion-tienda .tienda-remeras .item-remera {
+  border: 1px solid black;
+  background-color: rgba(50, 50, 50, 0.5);
+  margin: 1rem;
+  padding: 1rem;
+}
+main .sesion-tienda .tienda-remeras .item-remera:hover {
+  animation: shadow-drop-2-center 0.4s cubic-bezier(0.165, 0.84, 0.44, 1) both;
+}
+main .sesion-tienda .tienda-remeras .item-remera img {
+  width: 100%;
+}
+main .sesion-tienda .tienda-remeras .item-remera h6 {
+  margin: 1rem 0 0 1rem;
+  font-size: 20px;
+}
+main .sesion-tienda .tienda-remeras .item-remera button {
+  margin: 1rem;
+}
+@keyframes shadow-drop-2-center {
+  0% {
+    transform: translateZ(0);
+    box-shadow: 0 0 0 0 transparent;
+  }
+  100% {
+    transform: translateZ(50px);
+    box-shadow: 0 0 20px 0 rgba(0, 0, 0, 0.9);
+  }
+}
+main section .hero-equipos2 .heros-equipos2 {
+  width: 100%;
+  height: 85vh;
+}
+main section .hero-equipos2 h3 {
+  font-family: "Bebas Neue", sans-serif;
+  font-size: 5rem;
+  color: #ffffff;
+  background-color: rgba(0, 0, 0, 0.7);
+}
+main section .info-equipos2 h3 {
+  font-family: "Bebas Neue", sans-serif;
+  font-size: 5rem;
+}
+main section .info-equipos2 .parrafo-equipos2 {
+  margin-block: 2rem;
+  font-size: 1.3rem;
+}
+main section .info-equipos2 h4 {
+  font-family: "Bebas Neue", sans-serif;
+  font-size: 3.5rem;
+}
+main section .info-equipos2 h5 {
+  font-family: "Bebas Neue", sans-serif;
+  font-size: 2rem;
+  margin-top: 2rem;
+}
+main section .info-equipos2 .historia-equipos2 {
+  font-size: 1.3rem;
+  margin-top: 0.5rem;
+  margin-bottom: 5rem;
+}
+main section .car h5 {
+  font-family: "Bebas Neue", sans-serif;
+  font-size: 2rem;
+  margin-top: 2rem;
+}
+main section .car .car-2022 {
+  width: 100%;
+}
+
+@media screen and (max-width: 991px) {
+  .nosotros {
+    grid-template-columns: 1fr;
+    grid-template-rows: repeat(6, 1fr);
+    grid-template-areas: "caja1" "caja2" "caja4" "caja3" "caja5" "caja6";
+  }
+}/*# sourceMappingURL=style.css.map */

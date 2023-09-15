@@ -1,0 +1,95 @@
+main {
+
+    .sesion-historia {
+
+        .titulo {
+            margin-block: 5rem;
+
+            h2 {
+                font-family: $fontype;
+                font-size: 70px;
+                font-weight: 900;
+            }
+        }
+
+        .intro {
+            
+            .parrafo-historia1 {
+                font-size: 20px;
+                margin-bottom: 5rem;
+            }
+        }
+
+        .historiadiv {
+
+            h3 {
+                font-size: 30px;
+                font-weight: 600;
+            }
+
+            .parrafo-historia {
+                font-size: 20px;
+                margin-bottom: 5rem;
+            }
+        }
+
+        .titulo-banderas {
+            font-size: 30px;
+            margin-top: 5rem;
+            font-weight: 900;
+        }
+
+        .historiadivgrilla {
+            display: grid;
+            margin-bottom: 5rem;
+            grid-template-columns: 1fr 4fr;
+            grid-template-rows: repeat(10, auto);
+            grid-template-areas: 
+            "item1   item11"
+            "item2   item12"
+            "item3   item13"
+            "item4   item14"
+            "item5   item15"
+            "item6   item16"
+            "item7   item17"
+            "item8   item18"
+            "item9   item19"
+            "item10  item20"
+            ;
+
+            .grilla-item {
+                border: 1px solid black;
+                background-color: $greencolor;
+                font-size: 18px;
+                margin-bottom: 0.5rem;
+            }
+
+            .itemg1 {grid-area: item1;}
+            .itemg2 {grid-area: item2;}
+            .itemg3 {grid-area: item3;}
+            .itemg4 {grid-area: item4;}
+            .itemg5 {grid-area: item5;}
+            .itemg6 {grid-area: item6;}
+            .itemg7 {grid-area: item7;}
+            .itemg8 {grid-area: item8;}
+            .itemg9 {grid-area: item9;}
+            .itemg10 {grid-area: item10;}
+            .itemg11 {grid-area: item11;}
+            .itemg12 {grid-area: item12;}
+            .itemg13 {grid-area: item13;}
+            .itemg14 {grid-area: item14;}
+            .itemg15 {grid-area: item15;}
+            .itemg16 {grid-area: item16;}
+            .itemg17 {grid-area: item17;}
+            .itemg18 {grid-area: item18;}
+            .itemg19 {grid-area: item19;}
+            .itemg20 {grid-area: item20;}
+
+        }
+
+        .historiadivtabla {
+            width: 100vh;
+            margin: 0 5rem 10rem 10rem;
+        }
+    }
+}

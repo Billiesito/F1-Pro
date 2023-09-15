@@ -1,0 +1,66 @@
+main {
+
+    section {
+        
+        .hero-equipos2 {
+
+            .heros-equipos2 {
+                width: 100%;
+                height: 85vh;
+            }
+
+            h3 {
+                font-family: $fontype;
+                font-size: 5rem;
+                color: $whitecolor;
+                background-color: rgba(0, 0, 0, 0.7);
+            }
+        }
+    }
+
+    section {
+
+        .info-equipos2 {
+
+            h3 {
+                font-family: $fontype;
+                font-size: 5rem;
+            }
+
+            .parrafo-equipos2 {
+                margin-block: 2rem;
+                font-size: 1.3rem;
+            }
+
+            h4 {
+                font-family: $fontype;
+                font-size: 3.5rem;
+            }
+
+            h5 {
+                font-family: $fontype;
+                font-size: 2rem;
+                margin-top: 2rem;
+            }
+
+            .historia-equipos2 {
+                font-size: 1.3rem;
+                margin-top: 0.5rem;
+                margin-bottom: 5rem;
+            }
+        }
+
+        .car {
+
+            h5 {
+                font-family: $fontype;
+                font-size: 2rem;
+                margin-top: 2rem;
+            }
+
+            .car-2022 {
+                width: 100%;
+            }
+        }
+    }
+}

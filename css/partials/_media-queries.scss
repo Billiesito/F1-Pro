@@ -1,0 +1,14 @@
+@media screen and (max-width: 991px) {
+
+    .nosotros {
+        grid-template-columns: 1fr;
+        grid-template-rows: repeat(6, 1fr);
+        grid-template-areas: 
+        "caja1" 
+        "caja2"
+        "caja4"
+        "caja3"
+        "caja5"
+        "caja6";
+    }
+}

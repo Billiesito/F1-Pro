@@ -1,0 +1,89 @@
+main {
+
+    .sesion-inicio {
+
+        .ho {
+            background-image: url("../images/hero.png");
+            background-size: cover;
+            background-position: center;
+            height: 90vh;
+
+            h1 {
+                font-family: $fontype;
+                font-size: 80px;
+                color: $whitecolor;
+                background-color: rgba(0, 0, 0, 0.7);
+            }
+
+            .subtitulo {
+                font-size: 2.2rem;
+                text-align: center;
+                margin-inline: 35px;
+                color: $whitecolor;
+                background-color: rgba(0, 0, 0, 0.7);
+            }
+        }
+    }
+    
+    .sesion-inicio2 {
+
+        .nosotros {
+            display: grid;
+            margin-block: 9rem;
+            grid-template-columns: 1fr 1fr;
+            grid-template-rows: 1fr 1fr 1fr;
+            grid-template-areas: 
+            "caja1 caja2"
+            "caja4 caja3"
+            "caja5 caja6";
+
+            .nosotros-caja {
+                margin-inline: 1rem;
+                margin-block: 2rem;
+                height: 600px;
+            }
+
+            .nosotros-caja1 {
+                grid-area: caja1;
+                display: flex;
+                justify-content: center;
+            }
+
+            .nosotros-caja2 {
+                grid-area: caja2;
+
+                .pgrilla {
+                    font-size: 18px;
+                }
+            }
+
+            .nosotros-caja3 {
+                grid-area: caja3;
+                display: flex;
+                justify-content: center;
+            }
+
+            .nosotros-caja4 {
+                grid-area: caja4;
+
+                .pgrilla {
+                    font-size: 18px;
+                }
+            }
+
+            .nosotros-caja5 {
+                grid-area: caja5;
+                display: flex;
+                justify-content: center;
+            }
+            
+            .nosotros-caja6 {
+                grid-area: caja6;
+
+                .pgrilla {
+                    font-size: 18px;
+                }
+            }
+        }
+    }
+}

@@ -1,0 +1,118 @@
+main {
+    
+    .sesion-equipo {
+
+        .titulo-equipos {
+
+            h2 {
+                font-family: $fontype;
+                font-size: 70px;
+                font-weight: 900;
+                margin: 2rem 0 9rem 0;
+            }
+        }
+
+        .grilla-equipos {
+            display: grid;
+            height: 100vh;
+            grid-template-columns: 1fr 1fr 1fr ;
+            grid-template-rows: 1fr 1fr 1fr 1fr ;
+            grid-template-areas:
+            "equipo1 equipo2  equipo3"
+            "equipo4 equipo5  equipo6"
+            "equipo7 equipo8  equipo9"
+            ".       equipo10 . ";
+
+            .equipo {
+                border: 1px solid black;
+                background-color: rgb(255, 255, 255);
+                margin: 1rem;
+                display: flex;
+                justify-content: center;
+                align-items: center;
+
+                -webkit-animation:scale-up-center .4s cubic-bezier(.39,.575,.565,1.000) both;animation:scale-up-center .4s cubic-bezier(.39,.575,.565,1.000) both;
+            }
+
+            .equipo1 {
+                grid-area: equipo1;
+                background-image: url("../images/logoalfaromeo.jpg");
+                background-position: center;
+                background-size: cover;
+            }
+
+            .equipo2 {
+                grid-area: equipo2;
+                background-image: url("../images/logoalphatauri.jpg");
+                background-position: center;
+                background-size: cover;
+            }
+
+            .equipo3 {
+                grid-area: equipo3;
+                background-image: url("../images/logoalpine.png");
+                background-position: center;
+                background-size: cover;
+            }
+
+            .equipo4 {
+                grid-area: equipo4;
+                background-image: url("../images/logoastonmartin.jpg");
+                background-position: center;
+                background-size: cover;
+            }
+
+            .equipo5 {
+                grid-area: equipo5;
+                background-image: url("../images/logoferrari.png");
+                background-position: center;
+                background-size: cover;
+            }
+
+            .equipo6 {
+                grid-area: equipo6;
+                background-image: url("../images/logohaas2.png");
+                background-position: right;
+                background-size: cover;
+            }
+
+            .equipo7 {
+                grid-area: equipo7;
+                background-image: url("../images/logomclaren2.jpg");
+                background-position: center;
+                background-size: cover;
+            }
+
+            .equipo8 {
+                grid-area: equipo8;
+                background-image: url("../images/logomercedes2.png");
+                background-position: center;
+                background-size: cover;
+            }
+
+            .equipo9 {
+                grid-area: equipo9;
+                background-image: url("../images/logoredbull.jpg");
+                background-position: center;
+                background-size: cover;
+            }
+
+            .equipo10 {
+                grid-area: equipo10;
+                background-image: url("../images/logowilliams.jpg");
+                background-position: center;
+                background-size: cover;
+
+            }
+
+            @for $item2 from 1 through 10 {
+                .equipo#{$item2} {
+                    animation-delay: $item2*0.03s;
+                }
+            }
+        }
+    }
+}
+
+@-webkit-keyframes scale-up-center{0%{-webkit-transform:scale(.5);transform:scale(.5)}100%{-webkit-transform:scale(1);transform:scale(1)}}
+@keyframes scale-up-center{0%{-webkit-transform:scale(.5);transform:scale(.5)}100%{-webkit-transform:scale(1);transform:scale(1)}}

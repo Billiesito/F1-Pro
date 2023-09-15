@@ -1,0 +1,39 @@
+header {
+
+    nav {
+
+        .container-fluid {
+            background-color: $graycolor;
+
+            .navbar-brand {
+
+                .logo {
+                    max-width: 250px;
+                }
+            }
+
+            .collapse {
+
+                .navbar-nav {
+
+                    .nav-item a {
+                        -webkit-animation:rotate-center .6s ease-in-out both;
+                        animation:rotate-center .6s ease-in-out both;
+
+                        color: $whitecolor;
+                        border: 3px solid $maincolor;
+                        background-color: $dmcolor;
+                        font-family: $fontype;
+                        font-size: 2rem;
+
+                        &:hover {
+                            background-color: $lmcolor;
+                        } 
+                    }
+                }
+            }
+        }
+    }
+}
+@-webkit-keyframes rotate-center{0%{-webkit-transform:rotate(0);transform:rotate(0)}100%{-webkit-transform:rotate(360deg);transform:rotate(360deg)}}
+@keyframes rotate-center{0%{-webkit-transform:rotate(0);transform:rotate(0)}100%{-webkit-transform:rotate(360deg);transform:rotate(360deg)}}

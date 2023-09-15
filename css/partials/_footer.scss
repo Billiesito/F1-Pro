@@ -1,0 +1,30 @@
+footer {
+    background-color: $graycolor;
+
+    .pie {
+        
+        .redes {
+
+            .red {
+                font-size: 3.5rem;
+                color: $whitecolor;
+            }
+        }
+
+        .info {
+
+            .divinfo {
+
+                .icon {
+                    font-size: 1.5rem;
+                    color: $whitecolor;
+                }
+
+                .pinfo {
+                    color: $whitecolor;
+                    font-size: 1.3rem;
+                }
+            }
+        }
+    }
+}
