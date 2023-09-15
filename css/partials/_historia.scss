@@ -61,19 +61,49 @@ main {
                 border: 1px solid black;
                 background-color: $greencolor;
                 font-size: 18px;
-                margin-bottom: 0.5rem;
+                margin-bottom: 1rem;
             }
 
-            .itemg1 {grid-area: item1;}
-            .itemg2 {grid-area: item2;}
-            .itemg3 {grid-area: item3;}
-            .itemg4 {grid-area: item4;}
-            .itemg5 {grid-area: item5;}
-            .itemg6 {grid-area: item6;}
-            .itemg7 {grid-area: item7;}
-            .itemg8 {grid-area: item8;}
-            .itemg9 {grid-area: item9;}
-            .itemg10 {grid-area: item10;}
+            .itemg1 {grid-area: item1;
+                display: flex;
+                justify-content: center;
+                align-items: center;}
+            .itemg2 {grid-area: item2;
+                display: flex;
+                justify-content: center;
+                align-items: center;}
+            .itemg3 {grid-area: item3;
+                display: flex;
+                justify-content: center;
+                align-items: center;}
+            .itemg4 {grid-area: item4;
+                display: flex;
+                justify-content: center;
+                align-items: center;}
+            .itemg5 {grid-area: item5;
+                display: flex;
+                justify-content: center;
+                align-items: center;}
+            .itemg6 {grid-area: item6;
+                display: flex;
+                justify-content: center;
+                align-items: center;}
+            .itemg7 {grid-area: item7;
+                display: flex;
+                justify-content: center;
+                align-items: center;}
+            .itemg8 {grid-area: item8;
+                display: flex;
+                justify-content: center;
+                align-items: center;}
+            .itemg9 {grid-area: item9;
+                display: flex;
+                justify-content: center;
+                align-items: center;}
+            .itemg10 {grid-area: item10;
+                display: flex;
+                justify-content: center;
+                align-items: center;}
             .itemg11 {grid-area: item11;}
             .itemg12 {grid-area: item12;}
             .itemg13 {grid-area: item13;}
@@ -88,8 +118,10 @@ main {
         }
 
         .historiadivtabla {
+            display: flex;
+            justify-content: center;
+            align-items: center;
             width: 100vh;
-            margin: 0 5rem 10rem 10rem;
         }
     }
 }

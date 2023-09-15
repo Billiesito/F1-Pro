@@ -1,14 +1,366 @@
+@media screen and (max-width: 1399px) {
+
+    .historiadivtabla {
+        width: 70vh;
+        margin: 0 0 0 0;
+    }
+}
+@media screen and (max-width: 1099px) {
+
+    main {
+
+        .sesion-historia {
+    
+            .titulo {
+                margin-block: 4rem;
+    
+                h2 {
+                    font-family: $fontype;
+                    font-size: 50px;
+                    font-weight: 800;
+                }
+            }
+        }
+    }
+}
 @media screen and (max-width: 991px) {
 
-    .nosotros {
-        grid-template-columns: 1fr;
-        grid-template-rows: repeat(6, 1fr);
-        grid-template-areas: 
-        "caja1" 
-        "caja2"
-        "caja4"
-        "caja3"
-        "caja5"
-        "caja6";
+    main {
+
+        .sesion-inicio {
+
+            .ho {
+                height: 80vh;
+    
+                h1 {
+                    font-size: 60px;
+                }
+    
+                .subtitulo {
+                    font-size: 26px;
+                    margin-inline: 3rem;
+                }
+            }
+        }
+
+        .sesion-inicio2 {
+
+            .nosotros {
+                margin-block: 5rem;
+                grid-template-columns: 1fr;
+                grid-template-rows: repeat(6, 1fr);
+                grid-template-areas: 
+                "caja1"
+                "caja2"
+                "caja3"
+                "caja4"
+                "caja5"
+                "caja6";
+
+                .nosotros-caja {
+                    margin-inline: 0;
+                    margin-block: 1rem;
+                    height: auto;
+                    text-align: center;
+                }
+           }
+        }
+
+        .sesion-equipo {
+
+            .titulo-equipos {
+    
+                h2 {
+                    font-family: $fontype;
+                    font-size: 60px;
+                    font-weight: 800;
+                    margin: 2rem 0 5rem 0;
+                }
+            }
+    
+            .grilla-equipos {
+                display: grid;
+                grid-template-columns: 1fr 1fr;
+                grid-template-rows: repeat(5 1fr);
+                grid-template-areas:
+                "equipo1 equipo2"
+                "equipo3 equipo4"
+                "equipo5 equipo6"
+                "equipo7 equipo8"
+                "equipo9 equipo10";
+
+                .equipo {
+                    height: 180px;
+                }
+            }
+        }
+    }
+}
+
+@media screen and (max-width: 767px) {
+    main {
+
+        .sesion-inicio {
+
+            .ho {
+                height: 70vh;
+    
+                h1 {
+                    font-size: 45px;
+                }
+    
+                .subtitulo {
+                    font-size: 20px;
+                    margin-inline: 1rem;
+                }
+            }
+
+            .nosotros {
+                margin-block: 5rem;
+                grid-template-columns: 1fr;
+                grid-template-rows: repeat(6, 1fr);
+                grid-template-areas: 
+                "caja1"
+                "caja2"
+                "caja3"
+                "caja4"
+                "caja5"
+                "caja6";
+
+                .nosotros-caja {
+                    margin-inline: 0;
+                    margin-block: 1rem;
+                    height: auto;
+                    text-align: center;
+                }
+           }
+        }
+
+        .sesion-equipo {
+
+            .titulo-equipos {
+    
+                h2 {
+                    font-family: $fontype;
+                    font-size: 60px;
+                    font-weight: 800;
+                    margin: 2rem 0 5rem 0;
+                }
+            }
+    
+            .grilla-equipos {
+                display: grid;
+                grid-template-columns: 1fr;
+                grid-template-rows: repeat(10 1fr);
+                grid-template-areas:
+                "equipo1"
+                "equipo2"
+                "equipo3"
+                "equipo4"
+                "equipo5"
+                "equipo6"
+                "equipo7"
+                "equipo8"
+                "equipo9"
+                "equipo10";
+
+                .equipo {
+                    height: 270px;
+                }
+            }
+        }
+
+        .section-galery {
+            margin-block: 5rem;
+    
+            h2 {
+                font-family: $fontype;
+                font-size: 70px;
+                margin-top: 0;
+            }
+
+            titulo-carousel {
+                margin-top: 1rem;
+                font-size: 16px;
+            }
+        }
+
+        .sesion-tienda {
+
+            .titulo-tienda {
+
+                h2 {
+                    font-size: 50px;
+                    font-weight: 800;
+                    margin-top: 3rem;
+                }
+                
+                p {
+                    font-size: 24px;
+                    margin-bottom: 0;
+                }
+            }
+
+            .titulito1 {
+                font-size: 40px;
+                margin: 4rem 0 0 1rem ;
+            }
+
+            .tienda-gorras {
+                grid-template-columns: 1fr 1fr;
+                grid-template-rows: repeat(5 1fr);
+                grid-template-areas: 
+                "gorra1 gorra2"
+                "gorra3 gorra4"
+                "gorra5 gorra6"
+                "gorra7 gorra8"
+                "gorra9 gorra10"
+                ;
+            }
+
+            .tienda-buzos {
+                display: grid;
+                grid-template-columns: 1fr 1fr;
+                grid-template-rows: repeat(7 1fr);
+                grid-template-areas: 
+                "buzo1  buzo2"
+                "buzo3  buzo4"
+                "buzo5  buzo6"
+                "buzo7  buzo8"
+                "buzo9  buzo10"
+                "buzo11 buzo12"
+                "buzo13 .     ";
+            }
+            
+            .tienda-remeras {
+                display: grid;
+                margin-bottom: 3rem;
+                grid-template-columns: 1fr 1fr;
+                grid-template-rows: repeat(3 1fr);
+                grid-template-areas: 
+                "remera1 remera2"
+                "remera3 remera4"
+                "remera5 .      ";
+            }
+        }
+    }
+}
+
+
+@media screen and (max-width: 480px) {
+
+    .logo {
+        width: 150px;
+    }
+
+    main {
+
+        .sesion-inicio {
+
+            .ho {
+                height: 50vh;
+    
+                h1 {
+                    font-size: 45px;
+                }
+    
+                .subtitulo {
+                    font-size: 20px;
+                    margin-inline: 1rem;
+                }
+            }
+
+            .nosotros {
+                margin-block: 3rem;
+           }
+        }
+
+        .sesion-equipo {
+
+            .grilla-equipos {
+
+                .equipo {
+                    height: 200px;
+                } 
+            }
+        }
+
+        .sesion-tienda {
+
+            .titulo-tienda {
+
+                h2 {
+                    font-size: 40px;
+                }
+                
+                p {
+                    font-size: 20px;
+                    margin-bottom: 0;
+                }
+            }
+
+            .titulito1 {
+                font-size: 30px;
+                margin: 4rem 0 0 1rem ;
+            }
+            .titulito2 {
+                font-size: 30px;
+                margin: 4rem 0 0 1rem ;
+            }
+            .titulito3 {
+                font-size: 30px;
+                margin: 4rem 0 0 1rem ;
+            }
+
+            .tienda-gorras {
+                grid-template-columns: 1fr;
+                grid-template-rows: repeat(10 1fr);
+                grid-template-areas: 
+                "gorra1"
+                "gorra2"
+                "gorra3"
+                "gorra4"
+                "gorra5"
+                "gorra6"
+                "gorra7"
+                "gorra8"
+                "gorra9"
+                "gorra10"
+                ;
+            }
+
+            .tienda-buzos {
+                display: grid;
+                grid-template-columns: 1fr;
+                grid-template-rows: repeat(13 1fr);
+                grid-template-areas: 
+                "buzo1"
+                "buzo2"
+                "buzo3"
+                "buzo4"
+                "buzo5"
+                "buzo6"
+                "buzo7"
+                "buzo8"
+                "buzo9"
+                "buzo10"
+                "buzo11"
+                "buzo12"
+                "buzo13";
+            }
+            
+            .tienda-remeras {
+                display: grid;
+                margin-bottom: 3rem;
+                grid-template-columns: 1fr;
+                grid-template-rows: repeat(5 1fr);
+                grid-template-areas: 
+                "remera1"
+                "remera2"
+                "remera3"
+                "remera4"
+                "remera5";
+            }
+        }
     }
 }

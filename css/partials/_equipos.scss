@@ -14,24 +14,25 @@ main {
 
         .grilla-equipos {
             display: grid;
-            height: 100vh;
             grid-template-columns: 1fr 1fr 1fr ;
             grid-template-rows: 1fr 1fr 1fr 1fr ;
             grid-template-areas:
             "equipo1 equipo2  equipo3"
             "equipo4 equipo5  equipo6"
             "equipo7 equipo8  equipo9"
-            ".       equipo10 . ";
+            ".       equipo10 .      ";
 
             .equipo {
                 border: 1px solid black;
                 background-color: rgb(255, 255, 255);
+                height: 210px;
                 margin: 1rem;
                 display: flex;
                 justify-content: center;
                 align-items: center;
 
-                -webkit-animation:scale-up-center .4s cubic-bezier(.39,.575,.565,1.000) both;animation:scale-up-center .4s cubic-bezier(.39,.575,.565,1.000) both;
+                -webkit-animation:scale-up-center .4s cubic-bezier(.39,.575,.565,1.000) both;
+                animation:scale-up-center .4s cubic-bezier(.39,.575,.565,1.000) both;
             }
 
             .equipo1 {
